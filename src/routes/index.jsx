@@ -1,16 +1,16 @@
-import { createBrowserRouter } from 'react-router';
+import { createBrowserRouter } from "react-router";
 import App from "@/App";
-import Day1 from '@/pages/day1';
+import Day1 from "@/pages/day1";
 
 const routes = [
   {
-    path: '/',
+    path: "/",
     element: <App />,
   },
   {
-    path: 'day1',
+    path: "day1",
     element: <Day1 />,
-  }
+  },
 ];
 
 const router = createBrowserRouter(routes);
