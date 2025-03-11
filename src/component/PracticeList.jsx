@@ -7,6 +7,9 @@ function PracticeList() {
         <li>
           <Link to="/day1">Day1</Link>
         </li>
+        <li>
+          <Link to="/day2">Day2</Link>
+        </li>
       </ul>
     </>
   );
