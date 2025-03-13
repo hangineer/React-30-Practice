@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Accordion from "@/component/Accordion.jsx";
 
 const items = [
   {
@@ -16,23 +17,6 @@ const items = [
       "GitHub is built by developers for developers, and we’re proud to be home to the world’s largest open source community. With 50 million developers and millions more open source projects, GitHub has become the go-to place to collaborate and build software together.",
   },
 ];
-
-function Accordion({ title, isOpen, onToggle, children }) {
-  return (
-    <div>
-      <h2 className="m-4 cursor-pointer font-bold text-2xl" onClick={onToggle}>{title}</h2>
-      {/* can use children to accept the props */}
-      {isOpen && <p className="p-4">{children}</p>}
-    </div>
-  )
-};
-
-// the content to be displayed, using idx to find it
-// function handleToggle(idx, expendIdx, setExpendIdx) {
-//   // TODO:
-//   if (idx === expendIdx) return setExpendIdx(null);
-//   setExpendIdx(idx);
-// };
 
 
 function Day2() {
@@ -52,7 +36,7 @@ function Day2() {
               title={item.title}
               isOpen={expendIdx === idx}
               // Updater Function
-              onToggle={() => setExpendIdx((pre) => (pre === idx ? null : idx))}
+              onToggle={() => setExpendIdx((pre) => (pre === idx ? null : idx))} // Only allow one item at a time to be expanded
             >
               {item.content}
             </Accordion>
