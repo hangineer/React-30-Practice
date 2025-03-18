@@ -11,9 +11,9 @@ async function getCountries() {
   if (!res.ok) throw new Error("Can't fetch Country List");
 
   const data = await res.json();
-  return data.map(country => ({
+  return data.map((country) => ({
     isoCode: country.isoCode,
-    label: country.name.find(el => el.language === "EN").text
+    label: country.name.find((el) => el.language === "EN").text,
   }));
 }
 
@@ -25,7 +25,7 @@ async function getHolidays(selectedCountryIso) {
     countryIsoCode: selectedCountryIso,
     validFrom,
     validTo,
-  })
+  });
 
   const res = await fetch(`${apiUrl}/PublicHolidays?${params}`);
   if (!res.ok) throw new Error("Can't fetch Holiday List");
@@ -37,7 +37,7 @@ function formatDate(date) {
   return new Date(date).toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
-  })
+  });
 }
 
 function Day1() {
@@ -78,23 +78,25 @@ function Day1() {
         name="holidays"
         id="holidays"
         value={selectedCountryIso}
-        onChange={e => setSelectedCountryIso(e.target.value)}
+        onChange={(e) => setSelectedCountryIso(e.target.value)}
       >
-
-        {countryList.map(li => {
-          return(
-            <option key={li.isoCode} value={li.isoCode}>{li.label}</option>
-          )
+        {countryList.map((li) => {
+          return (
+            <option key={li.isoCode} value={li.isoCode}>
+              {li.label}
+            </option>
+          );
         })}
       </select>
       <div>
-        {holidayList.map(li => {
-            const holiday = li.name.find(el => el.language === "EN").text
-            return(
-              <div key={li.id}>{formatDate(li.startDate)} - {holiday}</div>
-            )
-          })
-        }
+        {holidayList.map((li) => {
+          const holiday = li.name.find((el) => el.language === "EN").text;
+          return (
+            <div key={li.id}>
+              {formatDate(li.startDate)} - {holiday}
+            </div>
+          );
+        })}
       </div>
     </>
   );
