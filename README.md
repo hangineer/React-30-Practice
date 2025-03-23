@@ -18,3 +18,4 @@ If you are developing a production application, we recommend using TypeScript an
 - [Day1: Public Holidays APP](https://reactpractice.dev/exercise/build-a-public-holidays-app/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
 - [Day2: Build an Accordion component](https://reactpractice.dev/exercise/build-an-accordion-component/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
 - [Day 3: Custom hooks - Build a custom hook that saves items to the local storage](https://reactpractice.dev/exercise/create-a-custom-hook-that-allows-saving-items-to-the-local-storage/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
+- [Day 4: Build a memory game](https://reactpractice.dev/exercise/build-a-memory-game/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
