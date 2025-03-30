@@ -23,7 +23,7 @@ function TodoList() {
       id: uuidv4(),
       text: newTodo,
       status: false,
-    }
+    };
     setTodos([...todos, newTodoItem]);
     setNewTodo("");
   };
