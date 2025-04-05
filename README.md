@@ -19,3 +19,4 @@ If you are developing a production application, we recommend using TypeScript an
 - [Day2: Build an Accordion component](https://reactpractice.dev/exercise/build-an-accordion-component/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
 - [Day 3: Custom hooks - Build a custom hook that saves items to the local storage](https://reactpractice.dev/exercise/create-a-custom-hook-that-allows-saving-items-to-the-local-storage/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
 - [Day 4: Build a memory game](https://reactpractice.dev/exercise/build-a-memory-game/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
+- [Day 5: Show top 10 articles from Hacker News](https://reactpractice.dev/exercise/show-top-10-articles-from-hacker-news/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
