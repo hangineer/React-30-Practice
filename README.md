@@ -21,3 +21,4 @@ If you are developing a production application, we recommend using TypeScript an
 - [Day 4: Build a memory game](https://reactpractice.dev/exercise/build-a-memory-game/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
 - [Day 5: Show top 10 articles from Hacker News](https://reactpractice.dev/exercise/show-top-10-articles-from-hacker-news/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
 - [Day 6: Build a drag and drop to-do list](https://reactpractice.dev/exercise/build-a-drag-and-drop-to-do-list/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
+- [Day 7: Create a movie search page](https://reactpractice.dev/exercise/create-a-movie-search-page/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
