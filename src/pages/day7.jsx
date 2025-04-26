@@ -49,8 +49,11 @@ function Day7() {
         <input className="border-1 rounded p-1 m-3" type="text" value={search} placeholder="search" onChange={(e) => setSearch(e.target.value)} />
         <button type="submit">Search</button>
       </form>
-
-      <MovieList movies={movies} />
+      {movies.length === 0 ? (
+        <div className="text-center">查無結果</div>
+      ) : (
+        <MovieList movies={movies} />
+      )}
     </>
   );
 };
