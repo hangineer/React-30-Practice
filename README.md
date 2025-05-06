@@ -22,3 +22,4 @@ If you are developing a production application, we recommend using TypeScript an
 - [Day 5: Show top 10 articles from Hacker News](https://reactpractice.dev/exercise/show-top-10-articles-from-hacker-news/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
 - [Day 6: Build a drag and drop to-do list](https://reactpractice.dev/exercise/build-a-drag-and-drop-to-do-list/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
 - [Day 7: Create a movie search page](https://reactpractice.dev/exercise/create-a-movie-search-page/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
+- [Day 8: Create a timer that can be started and stopped](https://reactpractice.dev/exercise/create-a-timer-that-can-be-started-and-stopped/?utm_source=calendar.reactpractice.dev&utm_medium=social&utm_campaign=calendar-v1)
