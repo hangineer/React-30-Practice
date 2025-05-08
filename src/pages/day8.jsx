@@ -1,20 +1,16 @@
 import { useState, useRef } from "react";
 
-
 function Day8() {
-  const fiveMinutes = new Date(0, 0, 0, 0, 0, 10);
-  const [remainingTime, setRemainingTime] = useState(fiveMinutes);
+  const initialTime = new Date(0, 0, 0, 0, 0, 15);
+  const [remainingTime, setRemainingTime] = useState(initialTime); // useState 是為了讓定時器可以隨著時間變化，每次渲染都會重新計算
   const [isRunning, setIsRunning] = useState(false);
   const formattedTime = Intl.DateTimeFormat("en-US", {
     minute: "2-digit",
     second: "2-digit",
   }).format(remainingTime);
 
+  // 使用 useRef 的原因是定時器 ID 需在多次渲染間保持不變
   const timerRef = useRef(null);
-
-  console.log("formattedTime", formattedTime);
-  console.log("remainingTime", remainingTime);
-
 
   const handleStart = () => {
     if (isRunning) return;
@@ -30,7 +26,7 @@ function Day8() {
         if (!minute && !second) {
           clearInterval(timerRef.current);
           setIsRunning(false);
-          handleReset(); // 時間倒數完畢，重置
+          handleReset(); // 時間倒數完 -> 重置
         }
         return currentTime;
       });
@@ -45,7 +41,7 @@ function Day8() {
   const handleReset = () => {
     setIsRunning(false);
     clearInterval(timerRef.current);
-    setRemainingTime(fiveMinutes);
+    setRemainingTime(initialTime);
   }
 
   return (
