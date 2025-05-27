@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocalStorage } from "@/hooks";
-import RestoreFromTrashIcon from '@mui/icons-material/RestoreFromTrash';
-import { v4 as uuidv4 } from 'uuid';
+import RestoreFromTrashIcon from "@mui/icons-material/RestoreFromTrash";
+import { v4 as uuidv4 } from "uuid";
 
 function TodoList() {
   const [newTodo, setNewTodo] = useState("");
