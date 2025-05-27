@@ -91,7 +91,7 @@ function Day9() {
       )}
 
       <div className="text-center">Displaying {pokemonsList?.results?.length} of {pokemonsList?.count} results</div>
-      <button className="block mt-3 mx-auto" type="button" onClick={() => loadMore()}>Load more</button>
+      <button className="block mt-3 mx-auto cursor-pointer bg-primary p-3 rounded-md" type="button" onClick={() => loadMore()}>Load more</button>
     </>
   );
 };

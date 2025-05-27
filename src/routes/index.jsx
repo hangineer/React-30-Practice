@@ -8,6 +8,10 @@ import Day5 from "@/pages/day5";
 import Day6 from "@/pages/day6";
 import Day7 from "@/pages/day7";
 import Day8 from "@/pages/day8";
+import Day9 from "@/pages/day9";
+import Day10 from "@/pages/day10";
+import Day11 from "@/pages/day11";
+
 const routes = [
   {
     path: "/",
@@ -44,6 +48,18 @@ const routes = [
   {
     path: "day8",
     element: <Day8 />,
+  },
+  {
+    path: "day9",
+    element: <Day9 />,
+  },
+  {
+    path: "day10",
+    element: <Day10 />,
+  },
+  {
+    path: "day11",
+    element: <Day11 />,
   },
 ];
 
