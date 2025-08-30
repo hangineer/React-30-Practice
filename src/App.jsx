@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>React-30-Practice</h1>
+      <h1>React-Practice</h1>
       <PracticeList />
     </>
   );

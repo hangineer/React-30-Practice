@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-const totalDays = 30;
+const totalDays = 13;
 
 function PracticeList() {
   return (
