@@ -43,5 +43,5 @@ Token 只會在前端使用，不會發送到後端
    ```
 
 ## 驗證設定
-設定完成後，在 /day13 會看到「✅ GitHub Token 已設定」
+設定完成後，在 /day13 會看到「✅ GitHub Token is set」
 

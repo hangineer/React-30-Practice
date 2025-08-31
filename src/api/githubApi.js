@@ -1,6 +1,6 @@
 // https://docs.github.com/en/rest/quickstart?apiVersion=2022-11-28
 const GITHUB_API_URL = 'https://api.github.com';
-const headers = {
+let headers = {
   "Accept": "application/vnd.github+json",
   "User-Agent": "GitHub-Issue-Filter-App",
   "X-GitHub-Api-Version": "2022-11-28"
@@ -25,7 +25,6 @@ export const fetchMilestones = async (owner, repo, token = null) => {
     return data.map(milestone => ({
       id: milestone.id,
       name: milestone.title,
-      description: milestone.description,
       state: milestone.state
     }));
   } catch (error) {
@@ -51,7 +50,7 @@ export const fetchAuthors = async (owner, repo, token = null) => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-
+    console.log("fetch authors", data);
     return data.map(contributor => ({
       id: contributor.id,
       name: contributor.login,
@@ -71,7 +70,7 @@ export const fetchLabels = async (owner, repo, token = null) => {
       headers["Authorization"] = `Bearer ${token}`;
     }
 
-    const response = await fetch(`${GITHUB_API_URL}/repos/${owner}/${repo}/labels`, { // per_page default 30
+    const response = await fetch(`${GITHUB_API_URL}/repos/${owner}/${repo}/labels?per_page=100`, { // per_page default 30
       headers
     });
 
@@ -79,9 +78,7 @@ export const fetchLabels = async (owner, repo, token = null) => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-
     return data
-      .filter(label => label.name.toLowerCase().includes("type"))
       .map(label => ({
         id: label.id,
         name: label.name,
