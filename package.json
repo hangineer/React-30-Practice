@@ -21,6 +21,7 @@
     "@tailwindcss/vite": "^4.0.9",
     "axios": "^1.8.4",
     "lodash": "^4.17.21",
+    "octokit": "^5.0.3",
     "react": "^19.0.0",
     "react-datepicker": "^8.7.0",
     "react-dom": "^19.0.0",
